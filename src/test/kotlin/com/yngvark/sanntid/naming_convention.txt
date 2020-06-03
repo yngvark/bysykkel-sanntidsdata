@@ -1,0 +1,4 @@
+SomeIntTest = Integration test
+SomeTest = Unit test
+
+Integration test: A test that spins up the whole application, and runs test against it, for instance a HTTP endpoint.
