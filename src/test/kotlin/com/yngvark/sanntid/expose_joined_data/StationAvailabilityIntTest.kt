@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Test
 
 @KtorExperimentalLocationsAPI
-class StationAvailabilityTest : BaseIntTest() {
+class StationAvailabilityIntTest : BaseIntTest() {
     @Test
     fun `endpoint should return station availability`() {
         // Given

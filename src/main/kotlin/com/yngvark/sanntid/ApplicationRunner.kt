@@ -16,6 +16,8 @@ class ApplicationRunner(
         val stationStatus = bysykkelApi.getStationStatus()
 
         val stationAvailability = bysykkelJoiner.join(stationInformation, stationStatus)
+
+        // Store data for it to be available by REST-endpoint
         stationAvailabilityStore.stationAvailability = stationAvailability
 
         consolePresenter.show(stationAvailability)
