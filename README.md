@@ -1,6 +1,6 @@
 # Bysykkel sanntidsdata
 
-Dette repositoryet inneholder et REST-api som viser data fra Oslo Bysykkels API. Eksempel
+Dette repositoryet inneholder et REST-API som viser data fra Oslo Bysykkels API, og eksponerer dataene via et HTTP-endepunkt. Eksempel
 
 ```bash
 ./gradlew run
@@ -26,7 +26,7 @@ Dersom dette mot formodning ikke funker, kan man kjøre følgende kommando i ste
 docker run -p 8080:8080 yngvark/bysykkel_sanntidsdata:0.0.1
 ```
 
-## Test API-et
+## Hent data fra API-et
 
 ```bash
 curl http://localhost:8080/station_availability | jq
